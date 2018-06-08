@@ -1,0 +1,35 @@
+{
+  "name": "be-coding",
+  "version": "1.0.0",
+  "description": "Simple repository to track my coding progress and share some stuff.",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.sass css/style.css -w",
+    "server": "live-server",
+    "start": "npm-run-all --parallel server watch:sass",
+    "compile:styl": "stylus css/style.css -o css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "cleancss -o css/style.min.css css/style.prefix.css",
+    "build:css": "npm-run-all compile:styl  prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Filiipe/be-coding.git"
+  },
+  "author": "Filipe Saretta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Filiipe/be-coding/issues"
+  },
+  "homepage": "https://github.com/Filiipe/be-coding#readme",
+  "dependencies": {
+    "node-sass": "^4.9.0",
+    "autoprefixer": "^7.1.4",
+    "clean-css": "^4.1.9",
+    "clean-css-cli": "^4.1.10",
+    "live-server": "^1.2.0",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1",
+    "jshint": "^2.9.5"
+  }
+}
