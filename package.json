@@ -1,27 +1,27 @@
 {
-  "name": "be-coding",
+  "name": "just-stay-coding",
   "version": "1.0.0",
   "description": "Simple repository to track my coding progress and share some stuff.",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.sass css/style.css -w",
+    "watch:sass": "sass sass/main.sass --watch css/style.css ",
     "server": "live-server",
     "start": "npm-run-all --parallel server watch:sass",
-    "compile:styl": "stylus css/style.css -o css/style.comp.css",
+    "compile:sass": "sass css/style.css css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "cleancss -o css/style.min.css css/style.prefix.css",
-    "build:css": "npm-run-all compile:styl  prefix:css compress:css"
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Filiipe/be-coding.git"
+    "url": "git+https://github.com/Filiipe/just-stay-coding.git"
   },
   "author": "Filipe Saretta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Filiipe/be-coding/issues"
+    "url": "https://github.com/Filiipe/just-stay-coding/issues"
   },
-  "homepage": "https://github.com/Filiipe/be-coding#readme",
+  "homepage": "https://github.com/Filiipe/just-stay-coding#readme",
   "dependencies": {
     "autoprefixer": "^7.1.4",
     "clean-css": "^4.1.9",
@@ -29,8 +29,8 @@
     "hoek": "^5.0.3",
     "jshint": "^2.9.5",
     "live-server": "^1.2.0",
-    "node-sass": "^4.9.0",
     "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^4.1.1",
+    "sass": "^1.10.0"
   }
 }
