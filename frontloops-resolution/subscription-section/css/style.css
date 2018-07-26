@@ -1,3 +1,31 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
+html,
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.7;
+}
+
+.heading-1 {
+  font-size: 2.5rem;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #85A5D4;
+}
+
+.price-section {
+  font-size: 1.8rem;
+}
 
 /*# sourceMappingURL=style.css.map */
