@@ -12,20 +12,49 @@ body {
   font-size: 62.5%;
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.7;
+  background-color: var(--primary-color);
 }
 
 .heading-1 {
   font-size: 2.5rem;
+  color: #5572D6;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 6rem;
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+
+:root {
+  --primary-color: #85A5f9;
 }
 
 .wrapper {
-  width: 100vw;
-  height: 100vh;
-  background-color: #85A5D4;
+  width: 60vw;
+  margin: 15rem auto;
 }
 
 .price-section {
-  font-size: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1.3rem;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 30rem;
+}
+.price-section__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  text-align: center;
+}
+.price-section__description:hover {
+  background-color: #E8E8E8;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
