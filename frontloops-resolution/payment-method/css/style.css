@@ -18,6 +18,11 @@ body {
   font-size: 2.5rem;
 }
 
+.icon {
+  width: 5rem;
+  height: 5rem;
+}
+
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -35,6 +40,17 @@ body {
   grid-template-rows: 2fr repeat(3, 1fr) 2fr;
   margin: 10rem auto;
   border-radius: 0.5rem;
+}
+.payment__method {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.method__flag {
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
