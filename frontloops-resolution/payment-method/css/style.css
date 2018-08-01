@@ -14,6 +14,10 @@ body {
   line-height: 1.4;
 }
 
+:root {
+  --secondary-color: #dededede;
+}
+
 .heading-1 {
   font-size: 2.5rem;
 }
@@ -33,24 +37,56 @@ body {
 }
 
 .payment {
-  width: 35rem;
-  height: 30rem;
-  background-color: #fff;
+  width: 34rem;
+  height: 31rem;
   display: grid;
-  grid-template-rows: 2fr repeat(3, 1fr) 2fr;
+  grid-template-rows: 2fr repeat(4, 1fr);
   margin: 10rem auto;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  color: #333333;
+  text-transform: uppercase;
+}
+.payment__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+  border-bottom: 1px solid var(--secondary-color);
 }
 .payment__method {
   display: flex;
   align-items: center;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  font-weight: 900;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-left: 2rem;
+  border-bottom: 0.1rem solid var(--secondary-color);
+  letter-spacing: 0.1rem;
 }
 
-.method__flag {
-  padding: 1rem;
+.steps {
+  padding: 1rem 0;
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+}
+
+.flag-name {
+  padding-left: 2rem;
+}
+
+.button-next {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #598BDD;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
