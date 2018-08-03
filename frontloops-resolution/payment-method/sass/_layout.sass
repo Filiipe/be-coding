@@ -13,7 +13,7 @@
   margin: 10rem auto
   border-radius: .4rem
   background-color: #fff
-  color: #333333
+  color: var(--black)
   text-transform: uppercase
 
   @media screen and (max-width: 360px)
@@ -40,13 +40,23 @@
     cursor: pointer
     color: var(--secondary-color)
 
+    &:hover
+      background-color: #f0f0f1
+      transition: all .3s
+
+    &:nth-child(4)
+      border: none
+
+  &__next:active
+    padding-top: .1rem
+
 .dots
   padding: 1rem 0
   color: var(--secondary-color)
   font-size: 1.4rem
 
 .dots span:first-child
-  color: #333333
+  color: var(--black)
 
 .button-next
   display: flex
@@ -57,15 +67,20 @@
   border: none
   cursor: pointer
   color: #fff
-  background-color: #598BDD
+  background-color: rgba(#598BDD,0.9)
   font-weight: 700
   text-transform: uppercase
   border-bottom-left-radius: .4rem
   border-bottom-right-radius: .4rem 
-
+  outline: none
+  &:active
+    padding-top: .1rem
+  &:hover
+    background-color: #598BDD
+  
   @media screen and (max-width: 360px)
     border-radius: 0
-
+  
 .is-active 
   display: none
   
@@ -78,4 +93,4 @@
   
 .is-selected
   transition: all .5s
-  color: #333333
+  color: var(--black)

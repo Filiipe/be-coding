@@ -16,6 +16,7 @@ body {
 
 :root {
   --secondary-color: #dededede;
+  --black: #333333;
 }
 
 .heading-1 {
@@ -48,7 +49,7 @@ body {
   margin: 10rem auto;
   border-radius: 0.4rem;
   background-color: #fff;
-  color: #333333;
+  color: var(--black);
   text-transform: uppercase;
 }
 @media screen and (max-width: 360px) {
@@ -77,6 +78,16 @@ body {
   cursor: pointer;
   color: var(--secondary-color);
 }
+.payment__method:hover {
+  background-color: #f0f0f1;
+  transition: all 0.3s;
+}
+.payment__method:nth-child(4) {
+  border: none;
+}
+.payment__next:active {
+  padding-top: 0.1rem;
+}
 
 .dots {
   padding: 1rem 0;
@@ -85,7 +96,7 @@ body {
 }
 
 .dots span:first-child {
-  color: #333333;
+  color: var(--black);
 }
 
 .button-next {
@@ -97,11 +108,18 @@ body {
   border: none;
   cursor: pointer;
   color: #fff;
-  background-color: #598BDD;
+  background-color: rgba(89, 139, 221, 0.9);
   font-weight: 700;
   text-transform: uppercase;
   border-bottom-left-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
+  outline: none;
+}
+.button-next:active {
+  padding-top: 0.1rem;
+}
+.button-next:hover {
+  background-color: #598BDD;
 }
 @media screen and (max-width: 360px) {
   .button-next {
@@ -123,7 +141,7 @@ body {
 
 .is-selected {
   transition: all 0.5s;
-  color: #333333;
+  color: var(--black);
 }
 
 /*# sourceMappingURL=style.css.map */
