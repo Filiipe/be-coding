@@ -26,13 +26,6 @@ body {
   width: 5rem;
   height: 5rem;
 }
-.icon--check {
-  display: grid;
-  width: 2.5rem;
-  height: 2.5rem;
-  justify-self: end;
-  margin-right: 1.5rem;
-}
 .icon--arrow {
   width: 2rem;
   height: 2rem;
@@ -114,6 +107,23 @@ body {
   .button-next {
     border-radius: 0;
   }
+}
+
+.is-active {
+  display: none;
+}
+
+.is-selected > .is-check {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-self: end;
+  margin-right: 1.5rem;
+}
+
+.is-selected {
+  transition: all 0.5s;
+  color: #333333;
 }
 
 /*# sourceMappingURL=style.css.map */
