@@ -12,25 +12,59 @@ body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
-}
-
-.container {
-  font-size: 1.3rem;
+  background-color: #16a085;
 }
 
 .order {
-  width: 30rem;
+  width: 55rem;
   height: 40rem;
+  margin: 10rem auto;
+  padding: 3rem 5rem;
+  background-color: #fff;
+  background-image: url(../img/bicycle.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 15rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
 }
-.order__stuff {
+.order__title {
+  font-size: 3rem;
+}
+.order__info {
+  color: #abadb0;
+  font-size: 1.3rem;
+}
+.order__items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1.5rem 0;
+  color: #3c3c3c;
 }
 
-.order-item {
+.order__items .product {
   display: flex;
   justify-content: space-between;
+  padding: 1.5rem 0;
+}
+.order__items .product__price {
+  font-weight: 700;
+  color: #000;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-top: 1rem;
+}
+.total__order {
+  font-weight: 700;
+  color: #000;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
