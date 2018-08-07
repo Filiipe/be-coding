@@ -12,7 +12,25 @@ body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
-  background-color: #16a085;
+  background-color: var(--main-color);
+}
+
+:root {
+  --main-color: #16a085;
+  --secondary-color: #abadb0;
+  --black: #333333;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  border: solid 0.1rem var(--secondary-color);
+  border-radius: 100rem;
+  padding: 0.5rem;
+}
+.icon:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 5px rgba(171, 173, 176, 0.2);
 }
 
 .order {
@@ -20,20 +38,30 @@ body {
   height: 40rem;
   margin: 10rem auto;
   padding: 3rem 5rem;
-  background-color: #fff;
-  background-image: url(../img/bicycle.png);
+  background: url(../img/bicycle.png) #fff no-repeat 0 15rem;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 15rem;
   font-size: 1.4rem;
   border-radius: 0.5rem;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0.4rem 0.4rem 0.5rem rgba(51, 51, 51, 0.3);
+}
+@media screen and (max-width: 550px) {
+  .order {
+    width: 100vw;
+    border-radius: 0;
+    background-image: none;
+  }
+}
+.order__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 .order__title {
   font-size: 3rem;
 }
 .order__info {
-  color: #abadb0;
+  color: var(--secondary-color);
   font-size: 1.3rem;
 }
 .order__items {
@@ -49,9 +77,14 @@ body {
   justify-content: space-between;
   padding: 1.5rem 0;
 }
+@media screen and (max-width: 550px) {
+  .order__items .product {
+    flex-direction: column;
+  }
+}
 .order__items .product__price {
   font-weight: 700;
-  color: #000;
+  color: var(--black);
 }
 
 .total {
@@ -63,7 +96,7 @@ body {
 }
 .total__order {
   font-weight: 700;
-  color: #000;
+  color: var(--black);
   font-size: 1.5rem;
 }
 
