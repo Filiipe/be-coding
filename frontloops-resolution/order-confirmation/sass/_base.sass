@@ -11,5 +11,20 @@ body
   font-size: 62.5%	 // 10px/16px = 62.2% -> 1rem = 10px
   font-family: 'Roboto', sans-serif
   line-height: 1.4
-  background-color: #16a085
+  background-color: var(--main-color)
+
+\:root
+  --main-color: #16a085
+  --secondary-color: #abadb0
+  --black: #333333
   
+.icon
+  width: 4rem
+  height: 4rem
+  border: solid .1rem var(--secondary-color)
+  border-radius: 100rem
+  padding: .5rem 
+
+  &:hover
+    cursor: pointer
+    box-shadow: 0 0 0 5px rgba(#abadb0, 0.2) // Could not use var, because the color it's not apllied 
