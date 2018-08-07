@@ -24,13 +24,13 @@
   "homepage": "https://github.com/Filiipe/just-stay-coding#readme",
   "dependencies": {
     "autoprefixer": "^7.1.4",
-    "clean-css": "^4.1.9",
-    "clean-css-cli": "^4.1.10",
+    "clean-css": "^4.2.0",
+    "clean-css-cli": "^4.2.0",
     "hoek": "^5.0.3",
-    "jshint": "^2.9.5",
+    "jshint": "^2.9.6",
     "live-server": "^1.2.0",
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^4.1.1",
-    "sass": "^1.10.0"
+    "sass": "^1.10.3"
   }
 }
