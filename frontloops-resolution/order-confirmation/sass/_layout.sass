@@ -10,7 +10,10 @@
   background-position: 0 15rem
   font-size: 1.4rem
   border-radius: .5rem
-  box-shadow: 4px 4px 5px rgba(0,0,0,0.3)
+  @media screen and (max-width: 550px)
+    width: 100vw
+    border-radius: 0
+    background-image: none
     
   &__title
     font-size: 3rem
@@ -29,6 +32,8 @@
   justify-content: space-between
   padding: 1.5rem 0
 
+  @media screen and (max-width: 550px)
+    flex-direction: column
   &__price
     font-weight: 700
     color: #000
