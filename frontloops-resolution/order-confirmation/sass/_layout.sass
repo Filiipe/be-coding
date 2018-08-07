@@ -3,23 +3,30 @@
   height: 40rem
   margin: 10rem auto
   padding: 3rem 5rem
-  background-color: #fff
-  background-image: url(../img/bicycle.png)
+  background: url(../img/bicycle.png) #fff no-repeat 0 15rem 
   background-size: cover
-  background-repeat: no-repeat
-  background-position: 0 15rem
   font-size: 1.4rem
   border-radius: .5rem
+  box-shadow: .4rem .4rem .5rem rgba(#333333,0.3)
+
   @media screen and (max-width: 550px)
     width: 100vw
     border-radius: 0
     background-image: none
-    
+
+  &__summary
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 1rem 
+
   &__title
     font-size: 3rem
+
   &__info
-    color: #abadb0
+    color: var(--secondary-color)
     font-size: 1.3rem
+
   &__items
     display: flex
     flex-direction: column
@@ -27,16 +34,18 @@
     padding: 1.5rem 0
     color: #3c3c3c
 
+
 .order__items .product
   display: flex
   justify-content: space-between
   padding: 1.5rem 0
-
+  
   @media screen and (max-width: 550px)
     flex-direction: column
+
   &__price
     font-weight: 700
-    color: #000
+    color: var(--black)
     
 .total
   display: flex
@@ -47,5 +56,5 @@
 
   &__order
     font-weight: 700
-    color: #000
+    color: var(--black)
     font-size: 1.5rem
