@@ -1,0 +1,25 @@
+.messages
+    display: grid
+    grid-template-rows: 2fr repeat(5, 1fr)
+
+    width: 35rem
+    height: 45rem
+    font-size: 1.5rem
+    background-color: #333333
+    margin: 10rem auto
+    grid-gap: 1.5rem
+    
+    &__name
+        display: flex
+        justify-content: space-around
+        align-items: center
+    
+    &__sender
+        background-color: #ffc
+        justify-self: start
+        margin: 0 1rem
+
+    &__receiver
+        background-color: #f35353
+        justify-self: end
+        margin: 0 1rem

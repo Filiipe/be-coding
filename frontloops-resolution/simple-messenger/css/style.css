@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html, body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.4;
+}
+
+.heading-1 {
+  font-size: 3.5rem;
+}
+
+.heading-2 {
+  font-size: 2.5rem;
+}
+
+.messages {
+  display: grid;
+  grid-template-rows: 2fr repeat(5, 1fr);
+  width: 35rem;
+  height: 45rem;
+  font-size: 1.5rem;
+  background-color: #333333;
+  margin: 10rem auto;
+  grid-gap: 1.5rem;
+}
+.messages__name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.messages__sender {
+  background-color: #ffc;
+  justify-self: start;
+  margin: 0 1rem;
+}
+.messages__receiver {
+  background-color: #f35353;
+  justify-self: end;
+  margin: 0 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
