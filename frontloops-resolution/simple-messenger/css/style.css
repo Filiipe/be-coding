@@ -11,40 +11,67 @@ html, body {
   font-size: 62.5%;
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.4;
+  background-color: #AFC4D8;
 }
 
-.heading-1 {
-  font-size: 3.5rem;
+.heading-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
 }
 
-.heading-2 {
-  font-size: 2.5rem;
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.online-check {
+  margin-right: 1.5rem;
+}
+
+.message-date {
+  display: block;
+  color: #AAAAAA;
+  background-color: #fff;
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .messages {
-  display: grid;
-  grid-template-rows: 2fr repeat(5, 1fr);
+  display: flex;
+  flex-direction: column;
   width: 35rem;
   height: 45rem;
   font-size: 1.5rem;
-  background-color: #333333;
+  background-color: #fff;
   margin: 10rem auto;
-  grid-gap: 1.5rem;
 }
 .messages__name {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 5rem;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #6A96D8;
 }
 .messages__sender {
-  background-color: #ffc;
-  justify-self: start;
-  margin: 0 1rem;
+  background-color: #E6EDF6;
+  margin: 1rem 1rem;
+  align-self: flex-start;
+  max-width: 70%;
 }
 .messages__receiver {
-  background-color: #f35353;
-  justify-self: end;
-  margin: 0 1rem;
+  background-color: #f2f2f2;
+  align-self: flex-end;
+  margin: 1rem 1rem;
+  max-width: 70%;
+}
+.messages__blocked {
+  background-color: #FFC2C1;
+  align-self: flex-end;
+  margin: 1rem 1rem;
+  max-width: 70%;
 }
 
 /*# sourceMappingURL=style.css.map */
