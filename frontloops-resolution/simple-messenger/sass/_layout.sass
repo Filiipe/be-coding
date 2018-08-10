@@ -1,6 +1,5 @@
 .messages
-  display: flex
-  flex-direction: column
+  display: grid
   width: 35rem
   height: 45rem
   font-size: 1.5rem
@@ -18,19 +17,26 @@
 
   &__sender
     background-color: #E6EDF6
-    margin: 1rem 1rem
-    align-self: flex-start
-    max-width: 70%
-        
+    justify-self: flex-start
+    
   &__receiver
     background-color: #f2f2f2
-    align-self: flex-end
-    margin: 1rem 1rem
-    max-width: 70%
+    justify-self: flex-end
 
   &__blocked
     background-color: #FFC2C1
     justify-self: flex-end
-    align-self: flex-end
-    margin: 1rem 1rem
+
+  &__sender,
+  &__receiver,
+  &__blocked
+    margin: var(--margin)
     max-width: 70%
+
+  &__write
+    display: flex
+    align-self: flex-end
+    justify-content: flex-end
+    margin: 0 1rem
+    height: 5rem
+   
