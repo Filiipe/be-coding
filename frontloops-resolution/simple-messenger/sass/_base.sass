@@ -20,36 +20,46 @@ html,body
   --medium-grey: #aaaaaa
 
 .heading-name
-  font-size: 1.5rem
+  font-size: 1.3rem
   font-weight: 700
-  letter-spacing: .15rem
-
+  margin-right: auto
+  
 .icon 
   width: 2rem
   height: 2rem
-
+  opacity: .8
+  cursor: pointer
+  
 .online-check
   margin-right: 1.5rem
 
-.message-date
+.message
   display: block
-  color: #AAAAAA
-  background-color: #fff
-  padding-bottom: .5rem
-  font-size: 1.1rem
+  background-color: transparent
 
-.message-writing
-  border: none
-  height: 100%
-  outline: none
-  width: 100%
+  &-date
+    color: var(--medium-grey)
+    padding-bottom: .5rem
+    font-size: 1.1rem
 
+  &-writing
+    border: none
+    height: 100%
+    outline: none
+    color: #353535
+    width: 100%
+
+    &::placeholder
+      color: var(--medium-grey)
+  
 .button
   border: none
   background-color: transparent
+  outline: none
   cursor: pointer
-  text-align: right
-  margin-right: 1rem
-  width: 50%
   text-transform: uppercase
+  color: var(--primary-color)
+  font-weight: 700
   
+  &::-moz-focus-inner 
+    border: 0
