@@ -15,6 +15,28 @@
     text-transform: uppercase
     background-color: #6A96D8
 
+  &__date
+    display: flex
+    margin: 1rem 1.5rem 0 1.5rem
+    color: var(--light-grey)
+    text-transform: uppercase
+    font-size: 1.2rem
+    text-align: center
+
+    &::before, 
+    &::after 
+      content: ""
+      position: relative
+      top: 0.65em
+      width: 45%
+      border-top: .1rem solid var(--light-grey)
+
+    &::before 
+      right: 1.5%
+
+    &::after 
+      left: 1.5%
+
   &__sender
     background-color: #E6EDF6
     justify-self: flex-start
