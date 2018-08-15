@@ -61,4 +61,39 @@
     justify-content: flex-end
     margin: 0 1rem
     height: 5rem
+.message-received
+  background-color: #f2f2f2
+  padding: 1rem
+  border-radius: .5rem
+  position: relative
+
+  &::before
+    content: ""
+    position: absolute
+    right: -.7rem
+    top: 0
+    width: 0
+    height: 0
+    border: 1rem solid transparent
+    border-left-color: #f2f2f2
+    border-right: 0
+    border-top: 0
+
+.message-sent
+  background-color: #e6edf6
+  padding: 1rem
+  border-radius: .5rem
+  position: relative
+
+  &::before
+    content: ""
+    position: absolute
+    left: -.7rem
+    top: 0
+    width: 0
+    height: 0
+    border: 1rem solid transparent
+    border-right-color: #e6edf6
+    border-left: 0
+    border-top: 0
    
