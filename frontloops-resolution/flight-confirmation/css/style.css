@@ -11,6 +11,9 @@ html, body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
+  background: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 :root {
@@ -19,10 +22,41 @@ html, body {
   --light-grey: #ABB4C1;
 }
 
+.font-city {
+  font-family: "Prompt";
+  font-weight: 900;
+  color: var(--primary-color);
+}
+.font-city--small {
+  color: var(--light-grey);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.font-city--small-right {
+  text-align: right;
+}
+
+.dash {
+  width: 2rem;
+  background: var(--light-blue);
+  height: 0.3rem;
+  align-self: center;
+}
+
 .ticket {
   width: 35rem;
   height: 40rem;
+  background-color: #fff;
+  border-radius: 0.6rem;
+  margin: 10rem auto;
   font-size: 2rem;
+}
+.ticket__dest {
+  height: 12rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  justify-items: center;
+  align-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
