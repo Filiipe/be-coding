@@ -10,11 +10,30 @@ html,body
   font-size: 62.5%	
   font-family: 'Roboto', sans-serif
   line-height: 1.4
-
+  background: url(../img/background.jpg) 
+  background-attachment: fixed
+  background-size: cover
  
 \:root
   --primary-color: #3B8ACF
   --light-blue: #D3E6F4
   --light-grey: #ABB4C1
 
+.font-city
+  font-family: 'Prompt'
+  font-weight: 900
+  color: var(--primary-color)
 
+  &--small
+    color: var(--light-grey)
+    font-size: 1.1rem 
+    text-transform: uppercase
+
+  &--small-right
+    text-align: right
+
+.dash
+  width: 2rem
+  background: var(--light-blue)
+  height: .3rem
+  align-self: center
