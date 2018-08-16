@@ -1,6 +1,6 @@
 .ticket
   width: 35rem
-  height: 40rem
+  height: 37rem
   background-color: #fff
   border-radius: .6rem
   margin: 10rem auto
@@ -13,3 +13,14 @@
     justify-items: center
     align-content: center
     
+  &__info
+    display: grid
+    grid-template-columns: repeat(3, auto)
+    grid-template-rows: repeat(4, 5rem)
+    padding: 2rem
+
+.qr-code
+  grid-column: 2 / -1
+  grid-row: 2 / 4
+  justify-self: end
+  padding-top: 1rem
