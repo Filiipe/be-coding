@@ -42,16 +42,22 @@ html, body {
   }
 }
 
-.side-img {
-  display: block;
-  background: url(../img/side.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.sign-social {
+  display: grid;
 }
-@media screen and (max-width: 700px) {
-  .side-img {
-    display: none;
-  }
+.sign-social__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid var(--border-color);
+  background: none;
+  margin: 0.5rem 0;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--primary-color);
+  border-radius: 0.5rem;
 }
 
 .sign {
@@ -74,22 +80,16 @@ html, body {
   padding: 0 3rem;
 }
 
-.sign-social {
-  display: grid;
+.side-img {
+  display: block;
+  background: url(../img/side.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.sign-social__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  border: 1px solid var(--border-color);
-  background: none;
-  margin: 0.5rem 0;
-  padding: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: var(--primary-color);
-  border-radius: 0.5rem;
+@media screen and (max-width: 700px) {
+  .side-img {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
