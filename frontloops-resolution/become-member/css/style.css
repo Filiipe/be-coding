@@ -12,33 +12,84 @@ html, body {
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
   background-color: var(--bg-color);
-  height: 100%;
 }
 
 :root {
   --bg-color: #4D515D;
   --primary-color: #8B8B8C;
+  --border-color: #EEF0F3;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.icon {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 2rem;
 }
 
 .membership {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  width: 90rem;
-  height: 80vh;
+  grid-template-columns: minmax(200px, 2fr) 1fr;
+  margin: 5rem auto;
+  width: 65vw;
+  height: 55rem;
   background-color: #fff;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 700px) {
+  .membership {
+    grid-template-columns: 1fr;
+  }
 }
 
 .side-img {
+  display: block;
   background: url(../img/side.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 700px) {
+  .side-img {
+    display: none;
+  }
+}
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+  position: relative;
+}
+.sign__about {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.sign__email {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.sign-social {
+  display: grid;
+}
+.sign-social__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid var(--border-color);
+  background: none;
+  margin: 0.5rem 0;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--primary-color);
+  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
