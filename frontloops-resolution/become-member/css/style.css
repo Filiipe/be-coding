@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html, body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  background-color: var(--bg-color);
+  height: 100%;
+}
+
+:root {
+  --bg-color: #4D515D;
+  --primary-color: #8B8B8C;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.membership {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  width: 90rem;
+  height: 80vh;
+  background-color: #fff;
+}
+
+.side-img {
+  background: url(../img/side.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
