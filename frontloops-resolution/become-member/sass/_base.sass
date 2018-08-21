@@ -22,3 +22,25 @@ html,body
   height: 2rem
   position: absolute
   left: 2rem
+  
+  @media screen and (max-width: 600px )
+    position: static
+    left: 0
+    
+.u-heading
+  font-weight: 300
+  font-size: 4rem
+  margin-bottom: 1rem
+
+  @media screen and (max-width: 900px)
+    font-size: 3rem
+
+  @media screen and (max-width: 600px )
+    font-size: 2rem   
+
+.u-text-color
+  color: var(--primary-color)
+  
+.u-remove
+  @media screen and (max-width: 600px )
+    display: none
