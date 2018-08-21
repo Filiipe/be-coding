@@ -26,20 +26,110 @@ html, body {
   position: absolute;
   left: 2rem;
 }
+@media screen and (max-width: 600px) {
+  .icon {
+    position: static;
+    left: 0;
+  }
+}
+
+.u-heading {
+  font-weight: 300;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 900px) {
+  .u-heading {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .u-heading {
+    font-size: 2rem;
+  }
+}
+
+.u-text-color {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 600px) {
+  .u-remove {
+    display: none;
+  }
+}
 
 .membership {
   display: grid;
   grid-template-columns: minmax(200px, 2fr) 1fr;
   margin: 5rem auto;
   width: 65vw;
-  height: 55rem;
-  background-color: #fff;
+  height: 60rem;
   font-size: 1.5rem;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .membership {
     grid-template-columns: 1fr;
   }
+}
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
+  position: relative;
+  background-color: #fff;
+  border-top-left-radius: 0.9rem;
+  border-bottom-left-radius: 0.9rem;
+}
+@media screen and (max-width: 800px) {
+  .sign {
+    border-radius: 0.9rem;
+  }
+}
+.sign__about {
+  margin: 4rem 0;
+}
+@media screen and (max-width: 600px) {
+  .sign__about {
+    margin: 3rem 0;
+  }
+}
+.sign__email {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 4rem;
+  width: 100%;
+  justify-content: space-between;
+  padding: 3rem 4rem 0 4rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-top: solid 0.1rem var(--border-color);
+}
+@media screen and (max-width: 600px) {
+  .sign__email {
+    padding: 2rem 3rem 0 3rem;
+    font-size: 1.1rem;
+  }
+}
+.sign__button-email {
+  color: var(--primary-color);
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+}
+@media screen and (max-width: 600px) {
+  .sign__button-email {
+    font-size: 1.1rem;
+  }
+}
+.sign__button-email:hover {
+  color: #000;
+  cursor: pointer;
 }
 
 .sign-social {
@@ -52,32 +142,22 @@ html, body {
   position: relative;
   border: 1px solid var(--border-color);
   background: none;
-  margin: 0.5rem 0;
-  padding: 1.5rem;
+  margin: 1rem 0;
+  padding: 1.9rem;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--primary-color);
   border-radius: 0.5rem;
 }
-
-.sign {
-  display: flex;
-  flex-direction: column;
-  padding: 0 3rem;
-  position: relative;
+@media screen and (max-width: 600px) {
+  .sign-social__button {
+    padding: 0.9rem;
+  }
 }
-.sign__about {
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-}
-.sign__email {
-  display: flex;
-  position: absolute;
-  left: 0;
-  bottom: 3rem;
-  width: 100%;
-  justify-content: space-between;
-  padding: 0 3rem;
+.sign-social__button:hover {
+  border: 0.1rem solid transparent;
+  box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .side-img {
@@ -85,8 +165,10 @@ html, body {
   background: url(../img/side.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  border-top-right-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .side-img {
     display: none;
   }
