@@ -6,9 +6,12 @@
   box-sizing: inherit;
 }
 
-html, body {
-  box-sizing: border-box;
+html {
   font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
   background: url(../img/background.jpg);
