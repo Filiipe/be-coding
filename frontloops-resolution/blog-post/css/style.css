@@ -23,6 +23,15 @@ body {
   --detail-color: #E37B62;
 }
 
+.u-text {
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+}
+.u-text--big-letter::first-letter {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -33,9 +42,24 @@ body {
 .blog {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  width: 70vw;
+  width: 60vw;
   height: 40rem;
   background-color: #fff;
+}
+.blog__title {
+  background-color: var(--primary-color);
+}
+.blog__text {
+  padding: 3rem 3rem 0 3rem;
+}
+
+.text-info {
+  display: flex;
+  justify-content: space-between;
+}
+.text-info__more {
+  display: flex;
+  margin: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
