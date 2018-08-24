@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  background-color: var(--secondary-color);
+}
+
+:root {
+  --primary-color: #484956;
+  --secondary-color: #F2CE97;
+  --detail-color: #E37B62;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 70vw;
+  height: 40rem;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
