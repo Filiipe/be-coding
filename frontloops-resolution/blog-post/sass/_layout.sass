@@ -20,6 +20,9 @@
     color: #EBE7E2
 
   &__text
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     padding: 3rem 3rem 0 3rem
 
 .title 
@@ -42,13 +45,20 @@
   align-items: center
   font-size: 1.4rem
   color: #EBE7E2
-  
   p
     margin-left: 1.2rem
 
 .text-info
   display: flex
   justify-content: space-between
+  align-items: center
+  font-size: 1.3rem
+
   &__more
     display: flex
     margin: 1rem
+
+    &--comments
+      display: flex
+      align-items: center
+      padding: 0 1.5rem
