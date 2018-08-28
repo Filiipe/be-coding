@@ -30,6 +30,7 @@ body {
 .icon--dots {
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
 }
 
 .u-text {
@@ -57,6 +58,12 @@ body {
   height: 6rem;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 600px) {
+  .author-avatar {
+    width: 4rem;
+    height: 4rem;
+  }
+}
 
 .container {
   display: flex;
@@ -71,6 +78,23 @@ body {
   width: 50vw;
   height: 40rem;
   background-color: #fff;
+}
+@media screen and (max-width: 1100px) {
+  .blog {
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  .blog {
+    width: 100vw;
+    margin: 0 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .blog {
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
 }
 .blog__title {
   background-color: var(--primary-color);
@@ -127,7 +151,8 @@ body {
 .text-info__more--comments {
   display: flex;
   align-items: center;
-  padding: 0 1.5rem;
+  margin: 0 1.5rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

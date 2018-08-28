@@ -25,6 +25,7 @@ body
   &--dots
     width: 2rem
     height: 2rem
+    cursor: pointer
 
 .u-text
   font-size: 1.4rem
@@ -41,8 +42,13 @@ body
 
 .u-bold
   font-weight: 700
+  
 .author-avatar
   border-radius: 100%
   width: 6rem
   height: 6rem
   box-shadow: 3px 3px 20px rgba(#000, .5)
+
+  @media screen and (max-width: 600px)
+    width: 4rem
+    height: 4rem
