@@ -17,10 +17,71 @@ body {
   background-color: var(--primary-color);
 }
 
+li {
+  list-style: none;
+}
+
 :root {
   --primary-color: #f8ebe9;
   --black: #333333;
-  --gray: #999999;
+  --grey: #999999;
+}
+
+.icon-arrow {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.icon-arrow--back {
+  margin-right: 0.5rem;
+  opacity: 0.7;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #fff;
+  width: 75vw;
+  height: 80vh;
+  margin: 5rem auto;
+}
+.card__img {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.categories {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--grey);
+  margin: 2rem 3rem;
+}
+.categories--right {
+  justify-content: flex-end;
+}
+
+.category {
+  display: flex;
+}
+.category__items:not(:last-child) {
+  margin-right: 2.5rem;
+}
+.category--back {
+  color: var(--black);
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+}
+
+.card-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
