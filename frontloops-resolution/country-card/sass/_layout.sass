@@ -13,3 +13,35 @@
   
   &__text
 
+.categories
+  display: flex
+  align-items: center
+  height: 5rem
+  font-size: 1.3rem
+  text-transform: uppercase
+  font-weight: 500
+  color: var(--grey)
+  margin: 2rem 3rem
+
+  &--right
+    justify-content: flex-end
+
+.category
+  display: flex
+
+  &__items:not(:last-child)
+    margin-right: 2.5rem 
+
+  &--back
+    color: var(--black)
+    opacity: .7
+    display: flex
+    align-items: center
+
+.card-header
+  position: absolute
+  top: 0 
+  left: 0
+  width: 100%
+  display: flex
+
