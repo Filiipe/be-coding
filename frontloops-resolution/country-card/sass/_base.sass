@@ -6,7 +6,7 @@
   box-sizing: inherit
 
 html
-  font-size: 62.5% // 10px/16px = 62.5% -> 1rem = 10px
+  font-size: 62.5% 
   box-sizing: border-box
 
 body
@@ -14,8 +14,20 @@ body
   line-height: 1.4
   background-color: var(--primary-color)
 
+li
+  list-style: none
+
+
 \:root 
   --primary-color: #f8ebe9
   --black: #333333
-  --gray: #999999
+  --grey: #999999
 
+
+.icon-arrow
+  width: 1.8rem
+  height: 1.8rem
+
+  &--back
+    margin-right: .5rem
+    opacity: .7
