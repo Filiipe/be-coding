@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  background-color: #f7cd75;
+}
+
+:root {
+  --black: #333333;
+  --grey: #727272;
+  --light-grey: #b5b5b5;
+}
+
+.icon-card {
+  width: 4rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #fff;
+  width: 75rem;
+  height: 40rem;
+  margin: 0 auto;
+  position: relative;
+  top: 10rem;
+}
+
+.wallet {
+  background: #f2f2f2;
+}
+
+/*# sourceMappingURL=style.css.map */
