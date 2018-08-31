@@ -2,8 +2,8 @@
   display: grid
   grid-template-columns: 1fr 2fr
   background-color: #fff   
-  width: 75rem
-  height: 40rem
+  width: 80rem
+  height: 45rem
   margin: 0 auto
   position: relative
   top: 10rem
@@ -52,6 +52,44 @@
 .card-selected
   border: solid .2rem  #8793C6
   transform: scale(1.05)
-
+  
 .balance
-  // background: var(--white)
+  overflow-y: auto
+  padding: 5rem
+
+  &__current
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-bottom: solid 1px rgba(#b5b5b5, .6)
+    padding-bottom: 5rem
+
+  &__funds
+    display: flex
+    align-items: center
+    height: 5rem
+
+  &__funds:not(:last-child)
+    margin: 4rem 0
+    
+.description
+  padding-left: 3rem
+
+.cost
+  font-size: 1.8rem
+  font-weight: 700
+  color: var(--black)
+  margin-left: auto // to make go all to the left, works with flex-box
+
+  &--decimal
+    vertical-align: top
+    font-size: 1.3rem
+
+  &--current
+    font-size:2.1rem
+
+  &--spent
+    color: #8F9ECA
+
+  &--added
+    color: #8FD065
