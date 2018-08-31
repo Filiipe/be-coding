@@ -5,11 +5,12 @@
   width: 95rem
   height: 55rem
   margin: 5rem auto
-  
+
   @media screen and (max-width: 600px)
     width: 100vw
     grid-template-columns: auto
     grid-template-rows: 0 1fr 
+  
   &__img
     background: url(../img/background.jpg)
     background-size: cover
@@ -22,18 +23,21 @@
   display: flex
   align-items: center
   height: 5rem
-  font-size: 1.3rem
+  font-size: 1.2rem
   text-transform: uppercase
   font-weight: 500
   color: var(--grey)
-  margin: 2rem 3rem
+  padding: 2rem 3rem
 
   &--right
     justify-content: flex-end
 
 .category
   display: flex
-
+  &__items:hover
+    cursor: pointer
+    color: var(--black)
+    
   &__items:not(:last-child)
     margin-right: 2.5rem 
 
@@ -42,6 +46,10 @@
     opacity: .7
     display: flex
     align-items: center
+    &:hover
+      cursor: pointer
+      opacity: 1
+
 .about
   display: flex
   flex-direction: column   
@@ -84,3 +92,19 @@
   font-size: 1.3rem
   font-weight: 700
 
+.play-button
+  width: 4rem
+  height: 4rem
+  background-color: rgba(#fff, .6)
+  border-radius: 50%
+  /* For vertically and horizontally center svg icon */ 
+  display: flex
+  align-items: center
+  justify-content: center
+  /* Technique for vertically and horizontally centering absolute items, needs a explicit height*/ 
+  margin: auto
+  position: absolute
+  top: 0 
+  left: 0 
+  bottom: 0 
+  right: 0
