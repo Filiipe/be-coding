@@ -17,7 +17,6 @@ body
 li
   list-style: none
 
-
 \:root 
   --primary-color: #f8ebe9
   --black: #333333
@@ -51,3 +50,32 @@ li
 .u-text-title
   +font-serif(5rem)
   font-weight: 400
+  margin-bottom: 1rem
+  width: 40rem
+
+  &::after
+    content: ""
+    display: inline-flex
+    width: 6rem
+    height: 0.3rem
+    position: relative
+    background: var(--black)
+    bottom: 1.4rem
+    margin-left: 1rem
+
+    @media screen and (max-width: 500px )
+      display: none
+      margin: 0
+
+  @media screen and (max-width: 500px )
+    +font-serif(3rem)
+    width: auto
+
+.u-text-author
+  +font-serif(1.3rem)
+
+  .author
+    font-weight: 900
+    
+  @media screen and (max-width: 500px)
+    width: auto 
