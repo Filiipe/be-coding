@@ -18,20 +18,22 @@
     <div class="wallet">
 
       <div class="wallet__add-more">
+
         <h2>My Wallets</h2>
         <img src="img/plus.svg" alt="Add wallet" class="icon-plus">
 
       </div>
 
-      <div class="wallet__visa">
+      <div class="wallet__card">
 
         <img src="img/visa.svg" alt="Company Card logo" class="icon-card">
+
         <p class="card-number">**** **** **** 1736</p>
         <p class="card-valid">Valid thru: 12/2029</p>
 
       </div>
 
-      <div class="wallet__master">
+      <div class="wallet__card">
 
         <img src="img/mastercard.svg" alt="Company Card logo" class="icon-card">
         <p class="card-number">**** **** **** 1636</p>
@@ -39,7 +41,7 @@
 
       </div>
 
-      <div class="wallet__maestro">
+      <div class="wallet__card">
 
         <img src="img/maestro.svg" alt="Company Card logo" class="icon-card">
         <p class="card-number">**** **** **** 1836</p>
@@ -54,61 +56,73 @@
       <div class="balance__current">
 
         <h2>Current Balance</h2>
-        <span class="available">$16.589,00</span>
+        <span class="cost cost--current">$16.589,<span class="cost--decimal">00</span></span>
 
       </div>
 
       <div class="balance__funds">
 
-        <img src="img/minus.svg" class="icon-minus">
-        <h3>Apple iPhone 10, 128 GB</h3>
-        <p class="description">Electronics #326544 - 12 july 2018</p>
-        <span class="cost">$1050,00</span>
+        <img src="img/minus.svg" class="icon--funds">
+        <div class="description">
+          <h3>Apple iPhone 10, 128 GB</h3>
+          <p class="about-spent">Electronics #326544 - 12 july 2018</p>
+        </div>
+        <span class="cost cost--spent">$1050,<span class="cost--decimal">00</span></span>
 
       </div>
 
       <div class="balance__funds">
 
-        <img src="img/plus.svg" class="icon-plus--small">
-        <h3>Funds Added</h3>
-        <p class="description">Payment #5959595 - 29 August 2018</p>
-        <span class="cost">$900,00</span>
+        <img src="img/plus.svg" class="icon--funds">
+        <div class="description">
+          <h3>Funds Added</h3>
+          <p class="about-spent">Payment #5959595 - 29 August 2018</p>
+        </div>
+        <span class="cost cost--added">$910,<span class="cost--decimal">00</span></span>
 
       </div>
 
       <div class="balance__funds">
 
-        <img src="img/minus.svg" class="icon-minus">
-        <h3>Energy Bill</h3>
-        <p class="description">Other #89498 - 19 july 2018</p>
-        <span class="cost">$100,00</span>
+        <img src="img/minus.svg" class="icon--funds">
+        <div class="description">
+          <h3>Energy Bill</h3>
+          <p class="about-spent">Other #89498 - 19 july 2018</p>
+        </div>
+        <span class="cost cost--spent">$110,<span class="cost--decimal">00</span></span>
 
       </div>
 
       <div class="balance__funds">
 
-        <img src="img/minus.svg" class="icon-minus">
-        <h3>The Eye Cinema Ticket</h3>
-        <p class="description">Entertainment #996544 - 12 july 2018</p>
-        <span class="cost">$1050,00</span>
+        <img src="img/minus.svg" class="icon--funds">
+        <div class="description">
+          <h3>The Eye Cinema Ticket</h3>
+          <p class="about-spent">Entertainment #996544 - 12 july 2018</p>
+        </div>
+        <span class="cost cost--spent">$1050,<span class="cost--decimal">00</span></span>
 
       </div>
 
       <div class="balance__funds">
 
-        <img src="img/minus.svg" class="icon-minus">
-        <h3>Food</h3>
-        <p class="description">Food #398826544 - 10 September 2018</p>
-        <span class="cost">$50,00</span>
+        <img src="img/minus.svg" class="icon--funds">
+        <div class="description">
+          <h3>Food</h3>
+          <p class="about-spent">Food #398826544 - 10 September 2018</p>
+        </div>
+        <span class="cost cost--spent">$50,<span class="cost--decimal">00</span></span>
 
       </div>
 
       <div class="balance__funds">
 
-        <img src="img/minus.svg" class="icon-minus">
-        <h3>Gas Station</h3>
-        <p class="description">Car #398826544 - 29 September 2018</p>
-        <span class="cost">$150,00</span>
+        <img src="img/minus.svg" class="icon--funds">
+        <div class="description">
+          <h3>Gas Station</h3>
+          <p class="about-spent">Car #398826544 - 29 September 2018</p>
+        </div>
+        <span class="cost cost--spent">$150,<span class="cost--decimal">00</span></span>
 
       </div>
 
@@ -116,7 +130,7 @@
 
   </div>
 
-
+  <script src="handleScroll.js"></script>
 
 </body>
 
