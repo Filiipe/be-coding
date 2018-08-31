@@ -6,6 +6,10 @@
   height: 80vh
   margin: 5rem auto
   
+  @media screen and (max-width: 600px)
+    width: 100vw
+    grid-template-columns: auto
+    grid-template-rows: 0 1fr 
   &__img
     background: url(../img/background.jpg)
     background-size: cover
@@ -38,8 +42,14 @@
     opacity: .7
     display: flex
     align-items: center
+  @media screen and (max-width: 500px )
+    padding-left: .5rem
+    width: 100vw
+    align-items: center
 
-.card-header
+    @media screen and (max-width: 500px )
+      grid-template-columns: 15rem 15rem
+
   position: absolute
   top: 0 
   left: 0
