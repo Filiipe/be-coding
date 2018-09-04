@@ -18,11 +18,15 @@ h2
   font-size: 2rem
   font-weight: 400
   color: var(--black)
+  @media screen and (max-width: 720px)
+    font-size: 1.6rem
 
 h3
   font-size: 1.8rem
   font-weight: 700
   color: var(--black)
+  @media screen and (max-width: 720px)
+    font-size: 1.4rem
 
 \:root 
   --black: #333333
@@ -33,8 +37,10 @@ h3
   width: 6rem
   height: 6rem
 
-.icon-plus:hover
-  cursor: pointer
+.icon-plus
+  margin-left: 2rem
+  &:hover
+    cursor: pointer
 
 .icon--funds
   width: 2rem
@@ -47,3 +53,16 @@ h3
   font-size: 1.3rem
   color: var(--light-grey)   
 
+
+.close
+  font-size: 2rem
+  position: relative
+  bottom: 1.5rem
+  margin-left: auto
+  display: none
+  &:hover
+    cursor: pointer
+    color: var(--grey)
+
+  @media screen and (max-width: 720px)
+    display: block
