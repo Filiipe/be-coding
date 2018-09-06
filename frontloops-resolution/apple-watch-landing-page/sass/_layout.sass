@@ -1,4 +1,22 @@
 .header
   margin: 0 auto
-  width: 80vw
+  width: 90vw
+
+  @media screen and ( min-width: $screen-md)
+    width: 50vw
+    
   
+.nav
+  display: flex
+  justify-content: space-between
+  margin-left: auto
+  margin-top: var(--space-md)
+  
+.navigation
+  display: flex
+  align-items: center
+  font-weight: 500
+  color: var(--text-secondary-color)
+
+  &__items
+    margin-right: var(--space-md)
