@@ -32,7 +32,7 @@ body {
   font-family: var(--font-primary);
   line-height: 1.4;
   font-size: var(--text-base-size);
-  background-color: var(--white);
+  background-color: #fff;
 }
 
 li {
@@ -65,6 +65,20 @@ li {
   .icon-logo {
     margin-right: 0;
   }
+}
+
+.button {
+  display: block;
+  border: 0.1rem solid var(--button-primary-color);
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: var(--button-primary-color);
+  color: var(--white);
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #D55A54;
 }
 
 .header {
