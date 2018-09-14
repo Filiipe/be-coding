@@ -9,7 +9,7 @@
 
   --gray: #999999
   --black: #24292e
-  --white: #f1f1f1
+  --white: #fff
 
   --button-primary-color: #ea625c
 
@@ -19,12 +19,19 @@
   --space-lg: calc(var(--baseline)*2)
   --space-xl: calc(var(--baseline)*3)
 
+
+
 // Media Queries Breakpoints
    
 $screen-xs: 576px 
 $screen-sm: 768px 
 $screen-md: 992px 
 $screen-lg: 1200px 
+
+// extend
+%page-size
+  margin: 0 auto
+  width: 90vw
 
 *,
 *::before,
@@ -38,13 +45,6 @@ html
   box-sizing: border-box
 
 body
-  font-family: var(--font-primary)
-  line-height: 1.4
-  font-size: var(--text-base-size)
-  background-color: #fff
- 
-li
-  list-style: none
   font-family: var(--font-primary)
   line-height: 1.4
   font-size: var(--text-base-size)
@@ -76,3 +76,4 @@ li
     width: .5rem
     background-color: rgba(167, 167, 167, 0.5)
     margin-right: 2rem
+    
