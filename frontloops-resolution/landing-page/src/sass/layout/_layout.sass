@@ -1,0 +1,46 @@
+.l-nav
+  width: 90vw
+  margin: 3rem auto
+  display: flex
+
+  +md
+    width: 80vw
+  +lg
+    width: 60vw
+
+  &__logo
+    margin-bottom: .8rem // to align-vertically with list__items
+
+  &__list
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-left: auto
+  
+.l-list__items
+  color: var(--light-grey)
+  margin: 0 2rem
+  padding-bottom: .8rem
+  
+  &:not(:last-child)
+    cursor: pointer
+    border-bottom: solid 1px transparent
+    
+    &:hover
+      color: var(--black)
+      border-bottom: solid .2rem var(--grey)
+
+
+// &__intro::after
+//     content: ''
+//     display: none
+    
+//     @media screen and ( min-width: $screen-md)
+//       display: block
+//       width: 75%
+//       height: 95%
+//       background: url(../img/watches.jpg)
+//       background-size: cover
+//       position: absolute
+//       left: 90%
+//       bottom: 0
