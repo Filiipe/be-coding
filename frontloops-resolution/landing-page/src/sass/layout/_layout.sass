@@ -8,6 +8,11 @@
   +lg
     width: 60vw
 
+.l-nav
+  margin: 3rem auto
+  display: flex
+  padding: 0 1rem
+  
   &__logo
     margin-bottom: .8rem // to align-vertically with list__items
 
@@ -16,6 +21,7 @@
     align-items: center
     justify-content: space-between
     margin-left: auto
+    position: relative
   
 .l-list__items
   color: var(--light-grey)
@@ -24,12 +30,22 @@
   
   &:not(:last-child)
     cursor: pointer
-    border-bottom: solid 1px transparent
+    border-bottom: solid .1rem transparent
     
     &:hover
       color: var(--black)
       border-bottom: solid .2rem var(--grey)
 
+  &:last-child
+    position: absolute
+    top: 5rem
+    left: 50%
+    transform: translateX(-50%)
+    margin: auto
+
+    +x-sm 
+      position: static
+      transform: none
 
 // &__intro::after
 //     content: ''
