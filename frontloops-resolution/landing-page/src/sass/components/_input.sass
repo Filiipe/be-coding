@@ -1,11 +1,14 @@
 .c-search-input
   border: none
   border-bottom: .1rem solid var(--light-grey)
-  width: 90%
   display: block
   padding-bottom: .5rem
   color: var(--black)
   outline: none
+
+  +x-sm
+    width: 80%
+    margin-left: 2rem
 
   &::placeholder
     color: var(--light-grey)
