@@ -4,7 +4,7 @@
   --grey: #999999;
   --black: #24292e;
   --white: #fff;
-  --button-primary-color: #ea625c;
+  --primary-color: #ea625c;
 }
 
 :root {
@@ -30,6 +30,15 @@
 }
 .s1--bold {
   font-weight: 500;
+}
+.s1--space {
+  padding: 2rem 0;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .s1--space {
+    padding: 5rem 0;
+  }
 }
 
 .s2 {
@@ -170,9 +179,67 @@ li {
   }
 }
 
+.l-about {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .l-about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 5rem;
+    align-items: start;
+    justify-items: center;
+  }
+}
+.l-about__items {
+  width: 80%;
+}
+@media (min-width: 768px) {
+  .l-about__items {
+    width: 100%;
+  }
+}
+.l-about__items .item-dots {
+  color: var(--grey);
+  font-size: 2rem;
+  cursor: pointer;
+}
+.l-about__items:last-child > p:last-child {
+  position: relative;
+  display: inline-block;
+  margin-top: 2rem;
+  padding-left: 6rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.l-about__items:last-child > p:last-child:hover {
+  padding-left: 8rem;
+}
+.l-about__items:last-child > p:last-child::before {
+  content: "";
+  display: flex;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 4rem;
+  height: 0.2rem;
+  transition: all 0.3s;
+}
+.l-about__items:last-child > p:last-child:hover:before {
+  width: 6rem;
+}
+
 .o-button-action {
-  background-color: var(--button-primary-color);
-  border: solid 0.2rem var(--button-primary-color);
+  background-color: var(--primary-color);
+  border: solid 0.2rem var(--primary-color);
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
