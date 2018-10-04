@@ -1,3 +1,40 @@
 .container
-    font-size: 1.8rem
-    margin: 2rem
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center  
+
+  &__items
+    display: grid
+    grid-template-columns: 1fr
+    grid-gap: 1rem
+    @media  (min-width: 576px) 
+      grid-template-columns: repeat(2, 1fr)
+      
+    @media  (min-width: 768px) 
+      grid-template-columns: repeat(3, 1fr)
+   
+.buttons
+  display: block
+  border: solid #999999 .2rem
+  padding: 1rem
+  border-radius: .5rem
+  color: #333333
+  font-weight: 700
+  text-transform: uppercase
+
+  &:hover
+    border-color: #ea625c
+    color: rgba(#333333,.7)
+    transform: scale(1.05)
+
+.title
+  font-size: 3rem
+  margin: 5rem 0
+  text-transform: uppercase
+  text-align: center
+
+  &--small    
+    font-size: 2.5rem
+    font-weight: 300
+    margin-bottom: 2rem
