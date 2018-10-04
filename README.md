@@ -2,7 +2,7 @@
 
 Repository to track my coding progress and share some stuff.
 
-[FrontLoops](https://frontloops.io/) resolutions:
+[FrontLoops](https://frontloops.io/)  my [solutions](https://juststaycoding.netlify.com/index.html):
 
 ### Loop 1
 Done using sass and a little bit of javascript to help me with some of the interactions. I tried to use BEM in all of the projects but in the last project the landing page  I wrote a more modular css using techniques that I learned [here](https://zellwk.com/blog/css-architecture-1/) where Zell Liew explains his approach for a better css architecture.
