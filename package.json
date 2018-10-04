@@ -4,13 +4,8 @@
   "description": "Simple repository to track my coding progress and share some stuff.",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass sass/main.sass --watch css/style.css ",
-    "server": "live-server",
-    "start": "npm-run-all --parallel server watch:sass",
-    "compile:sass": "sass css/style.css css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/style.comp.css -o css/style.prefix.css",
-    "compress:css": "cleancss -o css/style.min.css css/style.prefix.css",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "watch:sass": "sass sass/main.sass --watch css/styles.css",
+    "server": "browser-sync start -s --files 'css/styles.css', '**/*.html', scripts/*.js"
   },
   "repository": {
     "type": "git",
@@ -22,15 +17,8 @@
     "url": "https://github.com/Filiipe/just-stay-coding/issues"
   },
   "homepage": "https://github.com/Filiipe/just-stay-coding#readme",
-  "dependencies": {
-    "autoprefixer": "^7.1.4",
-    "clean-css": "^4.2.0",
-    "clean-css-cli": "^4.2.0",
-    "hoek": "^5.0.3",
-    "jshint": "^2.9.6",
-    "live-server": "^1.2.0",
-    "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.1",
-    "sass": "^1.10.3"
+  "devDependencies": {
+    "sass": "^1.10.3",
+    "browser-sync": "^2.24.7"
   }
 }
